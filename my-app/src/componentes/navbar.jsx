@@ -1,20 +1,58 @@
 import React from 'react';
-import CartWidget from './cartwidget.jsx';
+import { Link, NavLink } from 'react-router-dom';
+import logo from '../assets/logo.png'; 
 
-function NavBar() {
+const Navbar = () => {
   return (
-    <nav style={{ padding: '10px', backgroundColor: '#f4f4f4', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-      <div>
-        <img src="" alt="Logo tienda de ropa" style={{ height: '40px' }} />
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid">
+        {}
+        <Link className="navbar-brand d-flex align-items-center" to="/">
+          <img src={logo} alt="Logo" style={{ width: '40px', marginRight: '10px' }} />
+          Mi Página
+        </Link>
+
+        {}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/" end>
+                Inicio
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/productos">
+                Productos
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/quienes-somos">
+                Quiénes Somos
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contacto">
+                Contacto
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul style={{ display: 'flex', listStyle: 'none' }}>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/productos">Productos</a></li>
-        <li><a href="/contacto">Contacto</a></li>
-      </ul>
-      <CartWidget />
     </nav>
   );
-}
+};
 
-export default NavBar;
+export default Navbar;
