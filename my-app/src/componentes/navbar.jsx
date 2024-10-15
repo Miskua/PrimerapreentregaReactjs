@@ -11,8 +11,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" style={{ width: '40px', marginRight: '10px' }} />
           Mi Página
         </Link>
-
-        {}
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -29,7 +28,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/" end>
+              <NavLink className="nav-link" to="/inicio" end>
                 Inicio
               </NavLink>
             </li>
@@ -39,7 +38,7 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/quienes-somos">
+              <NavLink className="nav-link" to="/quienessomos">
                 Quiénes Somos
               </NavLink>
             </li>

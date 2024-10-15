@@ -1,12 +1,11 @@
 import React from 'react';
 
-const Inicio = () => {
+const inicio = () => {
   return (
     <div className="text-center">
-      <h1>Bienvenido a la Página de Inicio</h1>
-      <p>Este es el contenido de la página principal.</p>
+      <h1>Baloo</h1>
     </div>
   );
 };
 
-export default Inicio;
+export default inicio;

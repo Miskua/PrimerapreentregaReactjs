@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Contacto = () => {
+const contacto = () => {
   return (
     <div className="text-center">
       <h1>Contacto</h1>
-      <p>Puedes contactarnos a través del siguiente formulario o por teléfono.</p>
+      <p>Puedes contactarnos a través de.....</p>
       
       {}
       <form className="mx-auto" style={{ maxWidth: '500px' }}>
@@ -26,4 +26,4 @@ const Contacto = () => {
   );
 };
 
-export default Contacto;
+export default contacto;
